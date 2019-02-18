@@ -1,6 +1,6 @@
 var fs = require('fs')
 
-var dirName = process.argv[2] // �㴫�Ĳ����Ǵӵ� 2 ����ʼ��
+var dirName = process.argv[2] 
 
 fs.mkdirSync("./" + dirName) // mkdir $1
 process.chdir("./" + dirName) // cd $1
