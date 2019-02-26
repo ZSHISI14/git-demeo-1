@@ -11,7 +11,7 @@
     clear: both;
 }
 .topnavbar nav ul.hover{
-    border-bottom: 3px solid
+    border-bottom: 3px solid #e6684a;
 } 
 .topnavbar ul li a{
     text-decoration: none;
@@ -20,10 +20,12 @@
 }
 .topnavbar .rs{
     color:#e6684a;
-    margin: 4px;
+    margin-left: 4px;
+    font-family: "Arial black";
 }
 .topnavbar .wordcad{
     color: #9a9da2
+    font-family: "Arial black";
 }
 .topnavbar .logo{
     font-size: 24px;
@@ -31,5 +33,9 @@
     padding-bottom: 3px;
     float: left;
 
+}
+.topnavbar{
+    position: fixed;
+    width: 100%;
 }
 
