@@ -1,3 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #efefef;
+}
+
 .topnavbar ul li{
     float: left;
     list-style: none;
@@ -10,13 +23,14 @@
     display: block;
     clear: both;
 }
-.topnavbar nav ul.hover{
+.topnavbar nav ul a:hover{
     border-bottom: 3px solid #e6684a;
 } 
 .topnavbar ul li a{
     text-decoration: none;
     font-size: 12px;
     color: #b7b7b7;
+    font-weight: bold;
 }
 .topnavbar .rs{
     color:#e6684a;
@@ -24,7 +38,7 @@
     font-family: "Arial black";
 }
 .topnavbar .wordcad{
-    color: #9a9da2
+    color: #9a9da2;
     font-family: "Arial black";
 }
 .topnavbar .logo{
@@ -37,5 +51,105 @@
 .topnavbar{
     position: fixed;
     width: 100%;
-}
+    top: 0px;
+    left: 0px;
+    padding: 20px 0px 20px 0px; 
 
+}
+.topnavbar .topnavbar-inner{
+    padding: 0px 16px;
+
+}
+.banner{
+    height: 515px;
+    background: center center;
+    background-size: cover;
+}
+.banner .mask{
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+.card{
+    background-color: #fff;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pirctureandtext{
+    padding: 50px;
+}
+.card .picture{
+    float: left;
+}
+.card .text{
+    float: left;
+    margin-left: 50px;
+    width: 470px; 
+}
+.text .welcome{
+    background-color: #e6686a;
+    color:white;
+    display: inline-block;
+    padding: 4px 16px;
+    position: relative;
+    line-height: 22px;
+
+}
+.text .welcome .triangle{
+    display: block;
+    border: 10px solid transparent;
+    border-top-width: 0px;
+    border-left-color: #e6686a;
+    position: absolute;
+    left:4px;
+    top:100%;
+}
+.card .text h1{
+    margin-top: 26px;
+}
+.card .text p{
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.card .text hr{
+    height: 0;
+    border:none;
+    border: 1px solid #dedede;
+}
+.text dt,
+.text dd{
+    float: left;
+    padding: 5px 0px;
+}
+.text dt{
+    width: 30%;
+    font-weight: bold;
+} 
+.text dd{
+    width: 70%;
+    color: #9da0a7;
+}
+.text dl{
+    margin: 16px 0px;
+}
+.card .media{
+    background-color: #e6686a;
+    text-align: center;
+}
+.media svg{
+    width:30px;
+    height:30px;
+    fill: white; 
+    vertical-align: top;
+}
+.card footer a{
+    display: inline-block;
+    border-radius: 50%;
+    width:40px;
+    line-height: 30px;
+    padding: 5px 0;
+    margin: 15px;
+}
+.card footer a:hover{
+    background-color: #cf5d5f;
+}
