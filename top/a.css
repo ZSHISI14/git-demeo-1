@@ -1,0 +1,63 @@
+body{
+    background: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+.topNavBar nav>ul{
+   list-style: none;
+   margin:  0;
+   padding: 0;
+}
+.topNavBar nav>ul>li{
+    float: left;
+    margin-left: 17px;
+    margin-right:17px;
+
+}
+.clearfix::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.topNavBar nav>ul>li>a{
+    font-size: 12px;
+    font-weight: bold;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.7);
+    border-bottom: 3px solid transparent;
+    border-top: 3px solid transparent;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    display: block;
+}
+.topNavBar nav>ul>li>a:hover{
+    border-bottom: 3px solid #DC6465;
+}
+.topNavBar .logo .rs{
+    font-family: "Arial black";
+    margin: 4px;
+    color: #e6686a;
+}
+.topNavBar .logo .wordcard{
+    font-family: "Arial black";
+    color: #9A9DA2;
+}
+.topNavBar .logo{
+    padding-top: 1px;
+    padding-bottom: 3px;
+    font-size: 24px;
+}
+.topnavbar-inner{
+    padding: 0 16px;
+   }
+.topnavbar{
+    top: 0;
+    left: 0;
+    padding:20px 0 20px 0;
+    width: 100%;
+}
+body{
+    margin: 0;
+}
