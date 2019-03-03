@@ -54,7 +54,7 @@
                     <hr>
                     <dl >
                         <dt>年龄</dt><dd>23</dd>
-                        <dt>所在城市</dt><dd>温州</dd>
+                        <dt>学历</dt><dd>本科</dd>
                         <dt>邮箱</dt><dd>zh6358@163.com</dd>
                         <dt>手机</dt><dd>13968901797</dd>
                     </dl>
@@ -84,69 +84,75 @@
             <li>
                 <h3>HTML 5 &amp; CSS 3</h3>
                 <div class="progressBar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 70%"></div>
                 </div>
             </li>
             <li>
                 <h3>JavaScript</h3>
                 <div class="progressBar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 60%"></div>
                 </div>
             </li>
             <li>
                 <h3>jQuery</h3>   
                 <div class="progressBar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 60%"></div>
                 </div>
             </li>
             <li>
                 <h3>Vue</h3>
                 <div class="progressBar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 50%"></div>
                 </div>
             </li>
             <li>
                 <h3>React</h3>
                 <div class="progressBar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 50%"></div>
                 </div>
             </li>
             <li>
                 <h3>Http</h3>
                 <div class="progressBar">
-                    <div class="progress"></div>
+                    <div class="progress" style="width: 70%"></div>
                 </div>
             </li>
         </ol>
     </section>
     <section class="protfolio">
-            <h2>作品集</h2>
-            <nav>
-                <ol class="clearfix">
-                    <li id="all">所有</li>
-                    <li id="framework">框架</li>
-                    <li id="vallina">原生js&css</li>
-                </ol>
-                <div id="protfolioBar" class="bar state-1">
-                <div class="barinner"></div>
-                </div>
-            </nav>
-            <script>
-                all.onclick= function(){
-                    protfolioBar.className ='bar state-1'
-                }
-                framework.onclick= function(){
-                    protfolioBar.className ='bar state-2'
-                }
-                vallina.onclick= function(){
-                    protfolioBar.className ='bar state-3'
-                }
-            </script>
-            <div class="works">
-                <div class="big"><img src="./img/1.jpg"></div>
-                <div class="small"><img src="./img/2.jpg" alt=""></div>
-                <div class="small"><img src="./img/3.jpg" alt=""></div>
-            </div> 
-        </section>
+        <h2>作品集</h2>
+        <nav>
+            <ol class="clearfix">
+                <li id="all">所有</li>
+                <li id="framework">框架</li>
+                <li id="vallina">原生js&css</li>
+            </ol>
+            <div id="protfolioBar" class="bar state-1">
+            <div class="barinner"></div>
+            </div>
+        </nav>
+        <script>
+            all.onclick= function(){
+                protfolioBar.className ='bar state-1'
+            }
+            framework.onclick= function(){
+                protfolioBar.className ='bar state-2'
+            }
+            vallina.onclick= function(){
+                protfolioBar.className ='bar state-3'
+            }
+        </script>
+        <div class="works" style="height: 597px">
+            <div class="big" style="top: 0; left: 0;">
+                <img src="./img/1.jpg" alt="作品一">
+            </div>
+            <div class="small" style="top: 0; left: 645px;">
+                <img src="./img/2.jpg" alt="作品二">
+            </div>
+            <div class="small" style="top: 312px; left: 645px;">
+                <img src="./img/3.jpg" alt="作品三">
+            </div>
+        </div> 
+    </section>
 </body>
 </html>
