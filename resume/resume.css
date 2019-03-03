@@ -185,7 +185,7 @@ main .intrduction{
     font-weight: 18px;
 }
 .skills,
-.protfolio{
+section.protfolio{
     max-width: 940px;
     margin-left: auto;
     margin-right: auto;
