@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+kbd{
+    border: 1px solid red;
+    width: 4em;
+    height: 4em;
+    display: inline-block;
+    text-transform: uppercase;
+    position: relative;
+}
+#mainxxx>div:nth-child(2){
+    margin-left: -22px;
+}
+#mainxxx>div:nth-child(3){
+    margin-left: -80px;
+}
+#mainxxx{
+    display: inline-block;
+}
+main{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+
+}
+kbd>button{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    display: none;
+}
+
+kbd:hover>button{
+    display: inline-block;
+    background-color:#111111;
+    color: white;
+    border: none;
+}
+
+kbd{
+    width: 50px;
+    height: 40px;
+    background: linear-gradient(to bottom, #292929 0%,#111111 100%); 
+    border: 1px solid #373737;
+    border-radius: 6px;
+    box-shadow: 0 0 0px 1px #1a1b1c,0 0 0px 2px #1f2020,0 3px 0 2px #080808;
+    font-size: 16px;
+    font-family: Helvetica;
+    position: relative;
+    color: #c5c5c5;
+}
+.row{
+    margin: 20px;
+}
+.row kbd{
+    margin: 0 10px;
+}
+kbd img{
+    height: 16px;
+    width: 16px;
+    position: absolute;
+    bottom: 1px;
+    left: 4px;
+}
+kbd .text{
+    position: absolute;
+    left:4px;
+    top:4px;
+    
+}
+body{
+    background: gray url(./img/wallhaven-min.jpg) no-repeat center center;
+    background-size: cover;
+}
