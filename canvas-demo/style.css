@@ -1,0 +1,79 @@
+ol,ul{list-style: none;}
+*{margin: 0;padding: 0;}
+body{
+    margin:0;
+  }
+  #x{
+    display:block;
+  }
+.actions{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+  }
+.actions svg{
+  width: 2em;
+  height: 2em;
+  transition: all 0.3s;
+  margin: 0px 10px;
+}
+  
+.icon {
+    width: 1em; height: 1em;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+}
+.actions svg.active{
+  fill: red;
+  transform: scale(1.2);
+}
+.colors{
+  position: fixed;
+  top: 50px;
+  left: 28px;
+}
+.colors>li{
+  height: 20px;
+  width: 20px;
+  margin: 10px 0;
+  box-shadow: 0 0 3px rgba(0,0,0,0.25);
+  border-radius: 50%;
+  transition: 0.3s;
+}
+.colors>li.red{
+    background: red;
+}
+.colors>li.yellow{
+  background: yellow;
+}
+.colors>li.blue{
+  background: blue;
+}
+.colors>li.black{
+  background: #ffffff;
+}
+.colors>li.active{
+  box-shadow: 0 0 4px rgba(0,0,0,1);
+  transform: scale(1.2);
+}
+.sizes{
+  position: fixed;
+  right: 20px;
+  top: 45px;
+}
+.sizes>li{
+  margin: 10px 0;
+}
+.sizes .thin{
+  width: 20px;
+  height: 0px;
+  border-top: 4px solid black;
+}
+.sizes .thick{
+  width: 20px;
+  height: 0px;
+  border-top: 6px solid black;
+}
+
