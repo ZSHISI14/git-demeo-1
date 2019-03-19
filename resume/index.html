@@ -8,15 +8,26 @@
     <link rel="stylesheet" href="./resume.css">
     <script src="//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js"></script>
     <style type="text/css">
-        .icon {
-           width: 1em; height: 1em;
-           vertical-align: -0.15em;
-           fill: currentColor;
-           overflow: hidden;
+        .loading{height: 200px;width: 200px;border: 1px solid;position:relative;}
+        .loading::before,.loading::after{content:'';position:absolute;height: 10px;width: 10px;background:black;border-radius:50%;left:0;top:0;right:0;bottom:0;margin:auto;animation: s 2.5s linear infinite;}
+        .loading::after{animation-delay: 1s;}
+        @keyframes s{
+            0%{
+            width:0px;height:0px; opacity:1;
+            }
+            100%{
+            width:100px;height:100px;opacity:0;
+            }
         }
+        .icon {width: 1em; height: 1em;vertical-align: -0.15em;fill: currentColor;overflow: hidden;}
+        .site-welcome{position:fixed;height: 100%;left:0;right: 0;width: 100%;background: #888;display: flex;justify-content: center;align-items: center;z-index: 1;}
+        .site-welcome:active{display: flex;}
     </style>
 </head>
 <body>
+    <div id="site-welcome" class="site-welcome">
+        <div class="loading"></div>
+    </div>
     <div class="topnavbar">
         <div class="topnavbar-inner clearfix">
             <div class="logo">
@@ -154,5 +165,8 @@
             </div>
         </div> 
     </section>
+    <script>
+        site-welcome.Classlist.remove('active')
+    </script>
 </body>
 </html>
