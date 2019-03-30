@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <style>
+        .window{
+            width: 300px;
+            overflow: hidden;
+        }
+        .images{
+            display: flex;
+            align-items: flex-start;
+            transition: transform 0.5s;
+        }
+        .red{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="window" id="window">
+        <div class="images" id="images">
+            <img src="https://www.holidayingwithdogs.com.au/pages/wp-content/uploads/2018/12/B0013_dog-tent-child.png" width="300" height="200">
+            <img src="https://www.petlandfrisco.com/wp-content/uploads/2019/02/1315369_800.jpg" width="300" height="200">
+            <img src="https://canna-pet.com/wp-content/uploads/2017/06/20-longest-living-dog-breeds_canna-pet-e1498599846169.jpg" width="300" height="200">
+            <img src="https://media.familyminded.com/02/80/028020a28a6c4a4ea50e5c736ee37405.jpg" width="300" height="200">
+        </div>
+    </div>
+    <span id="buttons">
+        <span>图片1</span>
+        <span>图片2</span>
+        <span>图片3</span>
+        <span>图片4</span>
+    </span>
+    <script>
+        var allbuttons=$('#buttons>span')
+        for(let i=0;i<allbuttons.length;i++){
+            $(allbuttons[i]).on('click',function (x){
+                var index=$(x.currentTarget).index()
+                var x=index*-300
+                $('#images').css({
+                    transform:'translate(' +x+ 'px)'
+                })
+                n=index
+                activebutton(allbuttons.eq(n))
+            })
+        }
+        var n=0
+        var size=$('#images>img').length
+        playslide(n%size)
+
+        var timeId=setTime()
+
+        $('.window').on('mouseenter',function(){
+            window.clearInterval(timeId)
+        })
+        $('.window').on('mouseleave',function(){
+            timeId=setTime()
+        })
+        
+        function activebutton($button){
+            $button.addClass('red')
+            .siblings('.red').removeClass('red')
+        }
+        function setTime(){
+            return setInterval(()=>{
+                n += 1
+                playslide(n%size)
+            },2000)
+        }
+        function playslide(index) {
+            allbuttons.eq(index).trigger('click')
+        }
+    </script>
+</body>
+</html>
