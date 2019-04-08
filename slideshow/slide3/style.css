@@ -23,6 +23,7 @@ body{
     width: 920px;
     overflow: hidden;
 }
+
 .images{
     display: flex;
     width: 920px;
@@ -88,4 +89,13 @@ li a{
 
 a img{
     border:none;
+}
+
+.nav2{
+    display: none; 
+}
+@media (max-width:420px){
+    .buttonlist>.nav2{
+        display: block;
+    }
 }

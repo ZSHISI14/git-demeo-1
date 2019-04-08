@@ -36,3 +36,4 @@ function makeLeave($node){
     $node.removeClass('enter current').addClass('leave')
     return $node
 }
+
