@@ -1,0 +1,43 @@
+body,h1,h2,h3,p,small,a,ul{
+    margin: 0px;
+    padding: 0px;
+}
+#main{
+  padding:20px 0;
+  width:920px;
+  margin: 0 auto;
+}
+body{
+  background-color:#222;
+}
+#window{
+  margin:0px auto;
+  width:920px;
+  box-shadow: 0 0 3px #AAAAAA;
+  border-radius: 3px;
+  overflow: hidden;
+}
+#slide{
+    width: 920px;
+    height: 400px;
+    display: flex;
+    transition: all 0.5s;
+}
+#menu{
+    height: 45px;
+    background: gray;
+    text-align: center;
+}
+ul>li{
+    display: inline-block;
+    width: 60px;
+    height: 45px;
+    line-height: 45px;
+}
+ul>li.act{
+    background: url(./img/active_bg.png)
+}
+li.inact:hover{
+    background:url(img/pic_bg.png) repeat;
+}
+
