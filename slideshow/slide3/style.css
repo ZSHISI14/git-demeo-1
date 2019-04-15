@@ -31,12 +31,29 @@ body{
     margin: 0 auto;
     transition: all 0.5s;
     box-shadow:0 0 3px #AAAAAA;
+    position: relative;
 }
 #menu{
     height:45px;
 }
+
 .slide{
-    float: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: all 0.3s;
+}
+.silde.enter{
+    transform: translateX(100%);
+}
+.silde.current{
+    transform: translateX(0);
+    z-index: 1;
+}
+.silde.leave{
+    transform: translateX(-100%);
+    z-index: 1;
 }
 
 ul{

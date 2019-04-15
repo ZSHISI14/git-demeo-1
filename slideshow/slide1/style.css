@@ -8,7 +8,7 @@ body,h1,h2,h3,p,small,a,ul{
   margin: 0 auto;
 }
 body{
-  background-color:#222;
+  background-color:#ddd;
 }
 #window{
   margin:0px auto;
@@ -33,6 +33,7 @@ ul>li{
     width: 60px;
     height: 45px;
     line-height: 45px;
+    font-weight: bold;
 }
 ul>li.act{
     background: url(./img/active_bg.png)

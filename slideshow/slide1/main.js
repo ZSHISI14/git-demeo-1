@@ -42,8 +42,13 @@ function goToslide(index) {
 eventblind()
 */
 var $slide = $('#slide')
+highLightLi(0)
 $('ul>li').on('click',function(e){
     var $li =$(e.currentTarget)
     var $index = $li.index()
     $slide.css({ transform: `translateX(${-($index ) * 920}px)` })
+    highLightLi($index)
 })
+function highLightLi($index){
+    $('ul>li').eq($index).addClass('act').siblings().removeClass('act')
+}

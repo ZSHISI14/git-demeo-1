@@ -151,3 +151,7 @@ pen.onclick = function () {
     eraser.classList.remove('active')
 }
 
+
+        
+
+
